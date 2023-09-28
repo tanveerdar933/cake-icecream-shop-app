@@ -1,10 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
-import userReducer from "../features/userSlice";
+import orderReducer from "../features/orderSlice";
+import cakeReducer from "../features/cakeSlice";
+import icecreamReducer from "../features/icecreamSlice";
 import { useDispatch, useSelector, TypedUseSelectorHook } from "react-redux";
 
 export const myStore = configureStore({
   reducer: {
-    user: userReducer
+    order: orderReducer,
+    cake: cakeReducer,
+    icecream: icecreamReducer
   }
 })
 

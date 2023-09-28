@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 :root {
-  font-family: Poppins, sans-serif;
   --brand-color-lightgray: lightgray;
   --brand-color-white: white;
   --brand-color-orange: orange;
@@ -12,6 +11,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: Poppins, sans-serif;
 }
 
 body {
@@ -77,12 +77,10 @@ body {
   border-radius: 5px;
 }
 
-.form-input:focus:active,
 .form-input:focus,
 .form-input:active {
   background-color: var(--brand-color-lightyellow);
-  border: 1px solid orange;
-  box-shadow: none !important;
+  outline: 1px solid var(--brand-color-orange);
 }
 
 .form-input-group {
